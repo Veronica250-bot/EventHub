@@ -1,4 +1,4 @@
-// Tapahtumadata: Jalkapallo, jääkiekko ja koripallo Uudellamaalla vuonna 2025
+// Tapahtumadata: Jalkapallo, jääkiekko ja lentopallo Uudellamaalla vuonna 2025
 const events = [
     // Jalkapallo
     { 
@@ -180,72 +180,83 @@ const events = [
         url: "https://www.jokerit.fi" 
     },
 
-    // Koripallo
+    // Lentopallo
     { 
         id: "17", 
-        sport: "Koripallo", 
-        name: "Koripallo: Helsinki Seagulls vs BC Nokia", 
-        date: "20.5.2025", 
+        sport: "Lentopallo", 
+        name: "Lentopallo: Vuosaaren Viikingit vs Korson Veto", 
+        date: "18.5.2025", 
         location: "Helsinki", 
-        venue: "Töölön kisahalli", 
+        venue: "Kallahden palloiluhalli", 
         ticketPrice: "15€", 
-        description: "Korisliigan ottelu. Seagulls kohtaa BC Nokian!", 
-        url: "https://www.helsinkiseagulls.com" 
+        description: "Paikallinen lentopalloderby Kallahden palloiluhallissa.", 
+        url: "https://www.lentopallo.fi" 
     },
     { 
         id: "18", 
-        sport: "Koripallo", 
-        name: "Koripallo: Espoo Basket vs Vantaa Stars", 
-        date: "18.6.2025", 
-        location: "Espoo", 
-        venue: "Tapiolan urheiluhalli", 
-        ticketPrice: "15€", 
-        description: "Paikallisottelu Espoossa. Tule kannustamaan!", 
-        url: "https://www.korisliiga.fi" 
+        sport: "Lentopallo", 
+        name: "Lentopallo: Helsinki Volley vs Vantaan Lentis", 
+        date: "12.6.2025", 
+        location: "Helsinki", 
+        venue: "Myllypuron halli", 
+        ticketPrice: "10€", 
+        description: "Kesäkauden lentopalloturnaus Myllypuron hallissa.", 
+        url: "https://www.lentopallo.fi" 
     },
     { 
         id: "19", 
-        sport: "Koripallo", 
-        name: "Koripallo: Helsinki Seagulls vs KTP Basket", 
-        date: "10.9.2025", 
+        sport: "Lentopallo", 
+        name: "Lentopallo: Beach Club Tournament", 
+        date: "25.9.2025", 
         location: "Helsinki", 
-        venue: "Töölön kisahalli", 
-        ticketPrice: "15€", 
-        description: "Syyskauden ottelu. Seagulls haastaa KTP:n!", 
-        url: "https://www.helsinkiseagulls.com" 
+        venue: "Biitsi, Pasila", 
+        ticketPrice: "5€", 
+        description: "Rantalentopalloturnaus Biitsillä, Pasilassa. Kesäinen tunnelma!", 
+        url: "https://www.biitsi.fi" 
     },
     { 
         id: "20", 
-        sport: "Koripallo", 
-        name: "Koripallo: Espoo Basket vs Lahti Basketball", 
-        date: "15.10.2025", 
-        location: "Espoo", 
-        venue: "Tapiolan urheiluhalli", 
-        ticketPrice: "15€", 
-        description: "Korisliigan ottelu Espoossa. Tule nauttimaan pelistä!", 
-        url: "https://www.korisliiga.fi" 
+        sport: "Lentopallo", 
+        name: "Lentopallo: Korson Veto vs Rekolan Raikas", 
+        date: "15.12.2025", 
+        location: "Vantaa", 
+        venue: "Kaivokselan koulu", 
+        ticketPrice: "10€", 
+        description: "Joulukuun lentopalloturnaus Kaivokselan koululla.", 
+        url: "https://www.lentopallo.fi" 
     },
     { 
         id: "21", 
-        sport: "Koripallo", 
-        name: "Koripallo: Vantaa Stars vs UU-Korihait", 
+        sport: "Lentopallo", 
+        name: "Lentopallo: PKS Höntsäpelit Turnaus", 
         date: "5.11.2025", 
         location: "Vantaa", 
-        venue: "Myyrmäen urheilutalo", 
-        ticketPrice: "10€", 
-        description: "Syyskauden ottelu Vantaalla. Tule kannustamaan Vantaa Starsia!", 
-        url: "https://www.korisliiga.fi" 
+        venue: "Länsi-Vantaa", 
+        ticketPrice: "5€", 
+        description: "Harrastelijoiden lentopalloturnaus Länsi-Vantaalla.", 
+        url: "https://www.lentopallo.fi" 
     },
     { 
         id: "22", 
-        sport: "Koripallo", 
-        name: "Koripallo: Helsinki Seagulls vs Kataja Basket", 
-        date: "20.12.2025", 
+        sport: "Lentopallo", 
+        name: "Lentopallo: Helsinki Volley vs Espoo Lentopallo", 
+        date: "20.10.2025", 
         location: "Helsinki", 
-        venue: "Töölön kisahalli", 
-        ticketPrice: "15€", 
-        description: "Joulukuun ottelu. Seagulls kohtaa Katajan!", 
-        url: "https://www.helsinkiseagulls.com" 
+        venue: "Myllypuron halli", 
+        ticketPrice: "10€", 
+        description: "Syyskauden ottelu. Tule kannustamaan Helsinki Volleyta!", 
+        url: "https://www.lentopallo.fi" 
+    },
+    { 
+        id: "23", 
+        sport: "Lentopallo", 
+        name: "Lentopallo: Vantaan Lentis vs Korson Veto", 
+        date: "15.7.2025", 
+        location: "Vantaa", 
+        venue: "Myyrmäen urheilutalo", 
+        ticketPrice: "10€", 
+        description: "Kesäkauden ottelu Vantaalla. Luvassa jännittävä peli!", 
+        url: "https://www.lentopallo.fi" 
     }
 ];
 
