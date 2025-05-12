@@ -5,19 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EventHub</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link href="styles.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container mt-4">
-        <h1>EventHub – Urheilutapahtumat</h1>
-        <div class="mb-3">
-            <button class="btn btn-primary filter-btn" onclick="filterEvents('all')">Kaikki</button>
-            <button class="btn btn-outline-primary filter-btn" onclick="filterEvents('Jalkapallo')">Jalkapallo</button>
-            <button class="btn btn-outline-primary filter-btn" onclick="filterEvents('Jääkiekko')">Jääkiekko</button>
-            <button class="btn btn-outline-primary filter-btn" onclick="filterEvents('Koripallo')">Koripallo</button>
+<div class="container mt-4">
+    <h1>EventHub – Urheilutapahtumat</h1>
+
+    <div class="filter-section text-center">
+        <div class="btn-group" role="group">
+            <button class="btn btn-primary filter-btn" onclick="setSport('all')">Kaikki</button>
+            <button class="btn btn-outline-primary filter-btn" onclick="setSport('Jalkapallo')">Jalkapallo</button>
+            <button class="btn btn-outline-primary filter-btn" onclick="setSport('Jääkiekko')">Jääkiekko</button>
+            <button class="btn btn-outline-primary filter-btn" onclick="setSport('Koripallo')">Koripallo</button>
         </div>
-        <div id="eventList" class="list-group"></div>
+
+        <select class="form-select d-inline-block w-auto ms-3" onchange="setMonth(this.value)">
+            <option value="all">Kaikki kuukaudet</option>
+            <option value="1">Tammikuu</option>
+            <option value="2">Helmikuu</option>
+            <option value="3">Maaliskuu</option>
+            <option value="4">Huhtikuu</option>
+            <option value="5">Toukokuu</option>
+            <option value="6">Kesäkuu</option>
+            <option value="7">Heinäkuu</option>
+            <option value="8">Elokuu</option>
+            <option value="9">Syyskuu</option>
+            <option value="10">Lokakuu</option>
+            <option value="11">Marraskuu</option>
+            <option value="12">Joulukuu</option>
+        </select>
     </div>
-    <script src="script.js"></script>
+
+    <div id="eventList" class="row mt-4"></div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
