@@ -1,5 +1,6 @@
-// Tapahtumadata päivitetyillä tiedoilla
+// Tapahtumadata: Jalkapallo, jääkiekko ja koripallo Uudellamaalla vuonna 2025
 const events = [
+    // Jalkapallo
     { 
         id: "1", 
         sport: "Jalkapallo", 
@@ -13,28 +14,6 @@ const events = [
     },
     { 
         id: "2", 
-        sport: "Jääkiekko", 
-        name: "Jääkiekko: HIFK vs Kärpät", 
-        date: "20.5.2025", 
-        location: "Helsinki", 
-        venue: "Helsingin jäähalli", 
-        ticketPrice: "35€", 
-        description: "Kiihkeä paikallisottelu jäähallissa. Älä missaa tätä klassikkoa!", 
-        url: "https://www.hifk.fi" 
-    },
-    { 
-        id: "3", 
-        sport: "Lentopallo", 
-        name: "Lentopallo: Vuosaaren Viikingit vs Korson Veto", 
-        date: "18.5.2025", 
-        location: "Helsinki", 
-        venue: "Kallahden palloiluhalli", 
-        ticketPrice: "15€", 
-        description: "Paikallinen lentopalloderby Kallahden palloiluhallissa.", 
-        url: "https://www.lentopallo.fi" 
-    },
-    { 
-        id: "4", 
         sport: "Jalkapallo", 
         name: "Jalkapallo: PK-35 vs Gnistan", 
         date: "22.5.2025", 
@@ -45,7 +24,7 @@ const events = [
         url: "https://www.pk-35.fi" 
     },
     { 
-        id: "5", 
+        id: "3", 
         sport: "Jalkapallo", 
         name: "Jalkapallo: HJK vs KuPS", 
         date: "10.6.2025", 
@@ -56,73 +35,7 @@ const events = [
         url: "https://www.hjk.fi" 
     },
     { 
-        id: "6", 
-        sport: "Lentopallo", 
-        name: "Lentopallo: Helsinki Volley vs Vantaan Lentis", 
-        date: "12.6.2025", 
-        location: "Helsinki", 
-        venue: "Myllypuron halli", 
-        ticketPrice: "10€", 
-        description: "Kesäkauden lentopalloturnaus Myllypuron hallissa.", 
-        url: "https://www.lentopallo.fi" 
-    },
-    { 
-        id: "7", 
-        sport: "Jääkiekko", 
-        name: "Jääkiekko: Jokerit vs Tappara", 
-        date: "15.9.2025", 
-        location: "Helsinki", 
-        venue: "Helsingin jäähalli", 
-        ticketPrice: "30€", 
-        description: "Syyskauden avaus. Tule nauttimaan kiekkoviihteestä!", 
-        url: "https://www.jokerit.fi" 
-    },
-    { 
-        id: "8", 
-        sport: "Lentopallo", 
-        name: "Lentopallo: Beach Club Tournament", 
-        date: "25.9.2025", 
-        location: "Helsinki", 
-        venue: "Biitsi, Pasila", 
-        ticketPrice: "5€", 
-        description: "Rantalentopalloturnaus Biitsillä, Pasilassa. Kesäinen tunnelma!", 
-        url: "https://www.biitsi.fi" 
-    },
-    { 
-        id: "9", 
-        sport: "Jalkapallo", 
-        name: "Jalkapallo: Gnistan vs FC Lahti", 
-        date: "5.10.2025", 
-        location: "Vantaa", 
-        venue: "Myyrmäen stadion", 
-        ticketPrice: "20€", 
-        description: "Kauden loppuhuipennus Vantaalla.", 
-        url: "https://www.gnistan.fi" 
-    },
-    { 
-        id: "10", 
-        sport: "Jääkiekko", 
-        name: "Jääkiekko: HIFK vs Ilves", 
-        date: "20.11.2025", 
-        location: "Helsinki", 
-        venue: "Helsingin jäähalli", 
-        ticketPrice: "35€", 
-        description: "Talven klassikko. Luvassa jännittävä ottelu!", 
-        url: "https://www.hifk.fi" 
-    },
-    { 
-        id: "11", 
-        sport: "Lentopallo", 
-        name: "Lentopallo: Korson Veto vs Rekolan Raikas", 
-        date: "15.12.2025", 
-        location: "Vantaa", 
-        venue: "Kaivokselan koulu", 
-        ticketPrice: "10€", 
-        description: "Joulukuun lentopalloturnaus Kaivokselan koululla.", 
-        url: "https://www.lentopallo.fi" 
-    },
-    { 
-        id: "12", 
+        id: "4", 
         sport: "Jalkapallo", 
         name: "Jalkapallo: HJK vs SJK", 
         date: "15.7.2025", 
@@ -133,29 +46,18 @@ const events = [
         url: "https://www.hjk.fi" 
     },
     { 
-        id: "13", 
-        sport: "Jääkiekko", 
-        name: "Jääkiekko: Kärpät vs TPS", 
-        date: "10.10.2025", 
-        location: "Helsinki", 
-        venue: "Helsingin jäähalli", 
-        ticketPrice: "30€", 
-        description: "Vieraspeli Helsingissä. Tule kannustamaan!", 
-        url: "https://www.karpat.fi" 
-    },
-    { 
-        id: "14", 
-        sport: "Lentopallo", 
-        name: "Lentopallo: PKS Höntsäpelit Turnaus", 
-        date: "5.11.2025", 
+        id: "5", 
+        sport: "Jalkapallo", 
+        name: "Jalkapallo: Gnistan vs FC Lahti", 
+        date: "5.10.2025", 
         location: "Vantaa", 
-        venue: "Länsi-Vantaa", 
-        ticketPrice: "5€", 
-        description: "Harrastelijoiden lentopalloturnaus Länsi-Vantaalla.", 
-        url: "https://www.lentopallo.fi" 
+        venue: "Myyrmäen stadion", 
+        ticketPrice: "20€", 
+        description: "Kauden loppuhuipennus Vantaalla.", 
+        url: "https://www.gnistan.fi" 
     },
     { 
-        id: "15", 
+        id: "6", 
         sport: "Jalkapallo", 
         name: "Jalkapallo: Gnistan vs VPS", 
         date: "20.11.2025", 
@@ -166,7 +68,75 @@ const events = [
         url: "https://www.gnistan.fi" 
     },
     { 
-        id: "16", 
+        id: "7", 
+        sport: "Jalkapallo", 
+        name: "Jalkapallo: HJK vs Ilves", 
+        date: "25.6.2025", 
+        location: "Helsinki", 
+        venue: "Telia 5G Areena", 
+        ticketPrice: "25€", 
+        description: "Kesäkauden jännittävä ottelu HJK:n kotikentällä.", 
+        url: "https://www.hjk.fi" 
+    },
+    { 
+        id: "8", 
+        sport: "Jalkapallo", 
+        name: "Jalkapallo: FC Honka vs AC Oulu", 
+        date: "18.8.2025", 
+        location: "Espoo", 
+        venue: "Tapiolan urheilupuisto", 
+        ticketPrice: "20€", 
+        description: "Espoon paikallisottelu, jossa Honka haastaa AC Oulun.", 
+        url: "https://www.fchonka.fi" 
+    },
+    { 
+        id: "9", 
+        sport: "Jalkapallo", 
+        name: "Jalkapallo: PK-35 vs FC Haka", 
+        date: "12.9.2025", 
+        location: "Vantaa", 
+        venue: "Myyrmäen stadion", 
+        ticketPrice: "20€", 
+        description: "Syyskauden ottelu Vantaalla. Tule kannustamaan PK-35:ttä!", 
+        url: "https://www.pk-35.fi" 
+    },
+
+    // Jääkiekko
+    { 
+        id: "10", 
+        sport: "Jääkiekko", 
+        name: "Jääkiekko: HIFK vs Kärpät", 
+        date: "20.5.2025", 
+        location: "Helsinki", 
+        venue: "Helsingin jäähalli", 
+        ticketPrice: "35€", 
+        description: "Kiihkeä paikallisottelu jäähallissa. Älä missaa tätä klassikkoa!", 
+        url: "https://www.hifk.fi" 
+    },
+    { 
+        id: "11", 
+        sport: "Jääkiekko", 
+        name: "Jääkiekko: Jokerit vs Tappara", 
+        date: "15.9.2025", 
+        location: "Helsinki", 
+        venue: "Helsingin jäähalli", 
+        ticketPrice: "30€", 
+        description: "Syyskauden avaus. Tule nauttimaan kiekkoviihteestä!", 
+        url: "https://www.jokerit.fi" 
+    },
+    { 
+        id: "12", 
+        sport: "Jääkiekko", 
+        name: "Jääkiekko: HIFK vs Ilves", 
+        date: "20.11.2025", 
+        location: "Helsinki", 
+        venue: "Helsingin jäähalli", 
+        ticketPrice: "35€", 
+        description: "Talven klassikko. Luvassa jännittävä ottelu!", 
+        url: "https://www.hifk.fi" 
+    },
+    { 
+        id: "13", 
         sport: "Jääkiekko", 
         name: "Jääkiekko: Jokerit vs Lukko", 
         date: "25.12.2025", 
@@ -175,6 +145,107 @@ const events = [
         ticketPrice: "30€", 
         description: "Joulun peli. Tule nauttimaan kiekkoviihteestä!", 
         url: "https://www.jokerit.fi" 
+    },
+    { 
+        id: "14", 
+        sport: "Jääkiekko", 
+        name: "Jääkiekko: Kärpät vs TPS", 
+        date: "10.10.2025", 
+        location: "Helsinki", 
+        venue: "Helsingin jäähalli", 
+        ticketPrice: "30€", 
+        description: "Vieraspeli Helsingissä. Tule kannustamaan!", 
+        url: "https://www.karpat.fi" 
+    },
+    { 
+        id: "15", 
+        sport: "Jääkiekko", 
+        name: "Jääkiekko: HIFK vs Pelicans", 
+        date: "5.6.2025", 
+        location: "Helsinki", 
+        venue: "Helsingin jäähalli", 
+        ticketPrice: "35€", 
+        description: "Kesäkauden ottelu. Luvassa viihdyttävä ilta!", 
+        url: "https://www.hifk.fi" 
+    },
+    { 
+        id: "16", 
+        sport: "Jääkiekko", 
+        name: "Jääkiekko: Jokerit vs SaiPa", 
+        date: "18.10.2025", 
+        location: "Helsinki", 
+        venue: "Helsingin jäähalli", 
+        ticketPrice: "30€", 
+        description: "Syyskauden ottelu. Tule kannustamaan Jokereita!", 
+        url: "https://www.jokerit.fi" 
+    },
+
+    // Koripallo
+    { 
+        id: "17", 
+        sport: "Koripallo", 
+        name: "Koripallo: Helsinki Seagulls vs BC Nokia", 
+        date: "20.5.2025", 
+        location: "Helsinki", 
+        venue: "Töölön kisahalli", 
+        ticketPrice: "15€", 
+        description: "Korisliigan ottelu. Seagulls kohtaa BC Nokian!", 
+        url: "https://www.helsinkiseagulls.com" 
+    },
+    { 
+        id: "18", 
+        sport: "Koripallo", 
+        name: "Koripallo: Espoo Basket vs Vantaa Stars", 
+        date: "18.6.2025", 
+        location: "Espoo", 
+        venue: "Tapiolan urheiluhalli", 
+        ticketPrice: "15€", 
+        description: "Paikallisottelu Espoossa. Tule kannustamaan!", 
+        url: "https://www.korisliiga.fi" 
+    },
+    { 
+        id: "19", 
+        sport: "Koripallo", 
+        name: "Koripallo: Helsinki Seagulls vs KTP Basket", 
+        date: "10.9.2025", 
+        location: "Helsinki", 
+        venue: "Töölön kisahalli", 
+        ticketPrice: "15€", 
+        description: "Syyskauden ottelu. Seagulls haastaa KTP:n!", 
+        url: "https://www.helsinkiseagulls.com" 
+    },
+    { 
+        id: "20", 
+        sport: "Koripallo", 
+        name: "Koripallo: Espoo Basket vs Lahti Basketball", 
+        date: "15.10.2025", 
+        location: "Espoo", 
+        venue: "Tapiolan urheiluhalli", 
+        ticketPrice: "15€", 
+        description: "Korisliigan ottelu Espoossa. Tule nauttimaan pelistä!", 
+        url: "https://www.korisliiga.fi" 
+    },
+    { 
+        id: "21", 
+        sport: "Koripallo", 
+        name: "Koripallo: Vantaa Stars vs UU-Korihait", 
+        date: "5.11.2025", 
+        location: "Vantaa", 
+        venue: "Myyrmäen urheilutalo", 
+        ticketPrice: "10€", 
+        description: "Syyskauden ottelu Vantaalla. Tule kannustamaan Vantaa Starsia!", 
+        url: "https://www.korisliiga.fi" 
+    },
+    { 
+        id: "22", 
+        sport: "Koripallo", 
+        name: "Koripallo: Helsinki Seagulls vs Kataja Basket", 
+        date: "20.12.2025", 
+        location: "Helsinki", 
+        venue: "Töölön kisahalli", 
+        ticketPrice: "15€", 
+        description: "Joulukuun ottelu. Seagulls kohtaa Katajan!", 
+        url: "https://www.helsinkiseagulls.com" 
     }
 ];
 
