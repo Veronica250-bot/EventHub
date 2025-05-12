@@ -276,9 +276,9 @@ if (document.getElementById("eventList")) {
 
         currentSport = sportFilter;
 
-        // Suodata urheilulajin mukaan
+        // Suodata urheilulajin mukaan (kirjainkoosta riippumaton vertailu)
         if (sportFilter !== "all") {
-            filteredEvents = filteredEvents.filter(event => event.sport === sportFilter);
+            filteredEvents = filteredEvents.filter(event => event.sport.toLowerCase() === sportFilter.toLowerCase());
         }
 
         // Suodata kuukauden mukaan
@@ -287,20 +287,24 @@ if (document.getElementById("eventList")) {
         }
 
         // Näytä tapahtumakortit
-        filteredEvents.forEach(event => {
-            const eventCard = `
-                <div class="event-item">
-                    <a href="event.html?id=${event.id}&sport=${sportFilter}&month=${monthFilter}" class="text-decoration-none text-dark">
-                        <h3>${event.name}</h3>
-                        <p><strong>Päivämäärä:</strong> ${event.date}</p>
-                        <p><strong>Paikka:</strong> ${event.venue}, ${event.location}</p>
-                        <p><strong>Lipun hinta:</strong> ${event.ticketPrice}</p>
-                        <p><strong>Kuvaus:</strong> ${event.description}</p>
-                    </a>
-                </div>
-            `;
-            eventList.innerHTML += eventCard;
-        });
+        if (filteredEvents.length === 0) {
+            eventList.innerHTML = "<p>Ei tapahtumia valituilla suodattimilla.</p>";
+        } else {
+            filteredEvents.forEach(event => {
+                const eventCard = `
+                    <div class="event-item">
+                        <a href="event.html?id=${event.id}&sport=${sportFilter}&month=${monthFilter}" class="text-decoration-none text-dark">
+                            <h3>${event.name}</h3>
+                            <p><strong>Päivämäärä:</strong> ${event.date}</p>
+                            <p><strong>Paikka:</strong> ${event.venue}, ${event.location}</p>
+                            <p><strong>Lipun hinta:</strong> ${event.ticketPrice}</p>
+                            <p><strong>Kuvaus:</strong> ${event.description}</p>
+                        </a>
+                    </div>
+                `;
+                eventList.innerHTML += eventCard;
+            });
+        }
 
         // Päivitä URL-parametrit
         const newUrl = `${window.location.pathname}?sport=${sportFilter}&month=${monthFilter}`;
